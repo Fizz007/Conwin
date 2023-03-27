@@ -1,38 +1,179 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+ 
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #ffffff;
+  margin: auto -10px;
+  padding: 10px 20px;
+  box-shadow: 0 0 2px 0 rgb(110, 110, 110);
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  color: #5f6368;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+form {
+  position: relative;
+  width: 600px;
+  margin: 32px auto 50px auto;
+  background: #fff;
+  padding: 7px;
+  border-radius: 7px;
+  box-shadow: 0 1px 7px rgb(128, 128, 128);
+}
+
+form input {
+  width: 100%;
+  border: none;
+  padding: 4px 10px;
+  margin-bottom: 20px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+}
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px 10px;
+  outline: none;
+  font-size: 1rem;
+  resize: none;
+}
+
+form button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 18px;
+  bottom: -18px;
+  background: purple;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgb(165, 165, 165);
+  cursor: pointer;
+  outline: none;
+}
+
+.note {
+  background: #ffffff;
+  height: 170px;
+  width: 280px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+  padding: 10px;
+  margin: 16px;
+  float: left;
+  margin-right: 0;
+  
+}
+
+.hist-card{
+  position: relative;
+  top: 90%;
+  left: 25%;
+  background: #ffffff;
+  height: 170px;
+  width: 280px;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px rgb(175, 175, 175);
+  padding: 10px;
+  margin: 16px;
+  /* float: left; */
+  /* margin-right: 0; */
+}
+
+/* .video{
+  position: absolute;
+ 
+  top: 150px;
+  left: 300px;
+  z-index: 99;
+} */
+.note h1, .note h2 {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  margin-bottom: 6px;
+
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.note p {
+  font-size: 1rem;
+  color: #6f212b;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.video{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -44%);
+  margin: 300px auto 0;
+  transition:all 0.8s;
+  width: 50%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+
+.btn{
+  background-color: purple;
+  padding: 10px;
+  color: #fff;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+}
+
+.note button {
+  position: relative;
+  float: right;
+
+  color: #f88651;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.count {
   display: flex;
-  flex-direction: column;
+  margin-top: 20px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 }
